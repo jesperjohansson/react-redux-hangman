@@ -20,10 +20,22 @@ const getRandomWord = () => ({
   word: WORDS[Math.floor(Math.random() * (WORDS.length))],
 });
 
+const triggerWin = () => ({
+  type: ACTIONS.TRIGGER_WIN,
+  win: true,
+});
+
+const triggerLose = () => ({
+  type: ACTIONS.TRIGGER_LOSE,
+  lose: true,
+});
+
 export default null;
 export {
   makeGuess,
   makeWrongGuess,
   makeRightGuess,
   getRandomWord,
+  triggerWin,
+  triggerLose,
 };
