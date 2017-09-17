@@ -1,0 +1,12 @@
+node_modules/
+.DS_Store
+*.DS_Store
+.env
+*.log
+.npm
+npm-debug.log*
+yarn.lock
+yarn-debug.log*
+yarn-error.log*
+.yarn-integrity
+dist/
