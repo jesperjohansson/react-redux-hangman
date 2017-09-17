@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 
 const censorWord = (word, matches) => {
   const wordArray = [...word];
-  return wordArray.map(letter => (matches.find(match => match === letter) ? letter : '_'));
+  const censored = wordArray.map(letter => (matches.find(match => match === letter) ? letter : '_'));
+  return censored.map((letter, index) => (<span key={index} style={{ marginRight: '5px' }}>{`${letter}`}</span>));
 };
 
 const Word = ({ word, matches }) => (

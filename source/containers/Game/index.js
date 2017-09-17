@@ -31,6 +31,7 @@ class Game extends React.Component {
 
   render() {
     if (!this.props.word) return (<div>Loading...</div>);
+
     return (
       <div>
         <Word

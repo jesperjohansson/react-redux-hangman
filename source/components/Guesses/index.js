@@ -2,15 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Guesses = ({ total, wrong }) => (
-  <div>
-    <span>
-      Guesses:
-      &nbsp;
-      {total.map((letter, index) => <span key={index}>{letter}</span>)}
+  <div style={{ paddingTop: '20px' }}>
+    <div>
       Wrong letters:
       &nbsp;
       {wrong.map((letter, index) => <span key={index}>{letter}</span>)}
-    </span>
+    </div>
+    <div style={{ paddingTop: '20px', opacity: 0.5 }}>
+      Guesses:
+      &nbsp;
+      {total.map((letter, index) => <span key={index}>{letter}</span>)}
+    </div>
   </div>
 );
 
