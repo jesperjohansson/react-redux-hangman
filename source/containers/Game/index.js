@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { getRandomWord } from '../../actions';
 import Guesses from '../../components/Guesses';
 import Word from '../../components/Word';
+import Canvas from '../../components/Canvas';
 
 const mapStateToProps = state => ({
   total: state.guesses.total,
@@ -34,6 +35,7 @@ class Game extends React.Component {
 
     return (
       <div>
+        <Canvas wrong={this.props.wrong} />
         <Word
           word={this.props.word}
           matches={this.props.right}

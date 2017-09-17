@@ -2,7 +2,7 @@
   "name": "hangman",
   "version": "0.0.1",
   "scripts": {
-    "dev": "webpack-dev-server",
+    "dev": "webpack-dev-server --quiet",
     "build": "webpack -p --config webpack.config.production.js"
   },
   "dependencies": {
